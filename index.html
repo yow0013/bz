@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> beznizo Blog </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>بزنيزو القزم الإيطالي</h1>
+        <p>حكايات و أساطير بزنيزو</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="blog-post">
+            <img class="profile" src="images/profile.jpg" alt="John Doe">
+            <h2></h2>
+            <p class="date">Published on: <span id="postDate"></span></p>
+            <img class="post-image" src="images/post-image.jpg" alt="Blog Post">
+            <p>أشتهر القزم الإيطالي بتعصبه لسور الخاص بهو بماراياته الخيرية  في ملعب الخربة</p>
+            <p>أشتهر أيضا ك سائق اجرة غير شرعي  و مدرب في مينغاسا ايضا برشه لمازوت على من يجلس في سور</p>
+        </article>
+
+        <!-- Like Button -->
+        <button id="likeButton">Like 👍</button>
+        <p id="likeCount">0 Likes</p>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h3>Leave a Comment</h3>
+            <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="submitComment">Submit</button>
+            
+            <h3>Comments</h3>
+            <ul id="commentList">
+                <!-- Example Comment -->
+                <li class="comment">
+                    <img src="images/user1.jpg" class="comment-image" alt="User">
+                    <p><strong>اساطير بزنيزو </strong> </p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 بزنيزو القزم المتعصب. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
